@@ -8,7 +8,7 @@ Benefits:
 
 * Use Firefox's graphical interface to navigate the web visually 
 * Use elinks' austere textual interface to read content with more concentration and less distraction
-* Save plain text versions of webpages with elinks' "Save formatted document" command
+* Save clean plain text versions of webpages with elinks' "Save formatted document" command
 
 
 ## Prerequisites
