@@ -43,7 +43,7 @@ Start Firefox. Then start Firelinks by opening a terminal and typing
 Firelinks starts Ruby process in your Terminal window, which in turn starts and
 manages an `elinks` session that displays the current webpage. 
 
-As you visit pages in Firefox, you should see them should be loaded
+As you visit pages in Firefox, you should see them load
 automatically in the elinks session.
 
 To quit Firelinks, just press `CTRL-C` (instead of the normal quit key sequence for elinks).
