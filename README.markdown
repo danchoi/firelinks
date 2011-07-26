@@ -25,7 +25,7 @@ Benefits:
 
     gem install firelinks
 
-Try running it by typing `firelinks` on the command line. fIf you get an error
+Try running it by typing `firelinks` on the command line. If you get an error
 message saying that `firelinks` is missing, then you probably have a `PATH`
 issue. Try one of these workarounds:
 
