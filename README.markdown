@@ -15,7 +15,7 @@ Benefits:
 
 * Supported platforms: Linux and OS X
 * [elinks][elinks]
-* Firefox 3 or higher 
+* Firefox 3 or higher (tested on Firefox 5)
 * sqlite3 version 3.7.4 or higher
 * Ruby (tested on 1.9.2)
 
