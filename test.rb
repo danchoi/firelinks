@@ -1,22 +1,29 @@
+if `which elinks` !~ /\w/
+  abort "Missing elinks! Please install it."
+end
 
+history_path = `find #{ENV['HOME']}/.mozilla/firefox -name places.sqlite`.chomp
 
-history_path = "#{ENV['HOME']}/.config/google-chrome/Default/History"
+if history_path == ''
+  abort "You're missing your Firefox browser history database. Are you sure you have a recent version of Firefox installed?"
+end
 
-command = %Q{ cp #{history_path} temp.db && sqlite3 -line temp.db 'select title, url, last_visit_time from urls where title != "" order by last_visit_time desc limit 3' | less }
-
-mtime = Time.now - 100000
-
+command = %Q{sqlite3 -line #{history_path} 'select url, title, last_visit_date from moz_places order by last_visit_date desc limit 2'}
 
 use_remote = nil
 
-loop do 
-  current_mtime = File.mtime history_path
-  if current_mtime > mtime
-    mtime = current_mtime
-    
-    res = %x{ #{command} }
-    url = res[/^\s+url = (.*)/, 1]
+url = nil
 
+trap("INT") {
+  puts "Goodbye"
+  exit
+}
+
+loop do 
+  res = %x{ #{command} }
+  current_url = res[/^\s+url = (.*)/, 1]
+  if current_url != url
+    url = current_url
     cmd = if use_remote 
             %Q|elinks -remote 'openURL("#{url}")'|
           else
