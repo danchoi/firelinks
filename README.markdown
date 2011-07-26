@@ -13,8 +13,9 @@ Benefits:
 
 ## Prerequisites
 
+* Linux (does not work yet on OS X)
 * [elinks][elinks]
-* Firefox 3 or higher (tested on Linux)
+* Firefox 3 or higher 
 * Ruby (tested on 1.9.2)
 
 [elinks]:http://elinks.or.cz/
