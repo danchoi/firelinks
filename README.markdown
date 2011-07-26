@@ -51,7 +51,7 @@ To quit Firelinks, just press `CTRL-C` (instead of the normal quit key sequence 
 ## Troubleshooting
 
 If Firelinks starts an elinks session but doesn't seem to be updating it as
-you hit new pages in Firefox, you may by missing sqlite3 or in need of a newer version.
+you hit new pages in Firefox, you may be missing sqlite3 or in need of a newer version.
 
 Run `sqlite3 -version` to make sure you have a recent version of sqlite3 (3.7.4 or later).
 
