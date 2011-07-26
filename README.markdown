@@ -2,7 +2,6 @@
 
 Firelinks lets you mirror your Firefox browsing session in elinks.
 
-
 <a href="https://github.com/danchoi/firelinks/raw/master/screens/firelinks1b.png" rel="lightbox[screens]"><img src="https://github.com/danchoi/firelinks/raw/master/screens/firelinks1c.png" /></a>
 
 Benefits:
