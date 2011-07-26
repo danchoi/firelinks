@@ -55,6 +55,11 @@ you hit new pages in Firefox, you may be missing sqlite3 or in need of a newer v
 
 Run `sqlite3 -version` to make sure you have a recent version of sqlite3 (3.7.4 or later).
 
+Also, note that elinks keeps its own cookies and session data separately from
+Firefox. So if you're logged into nytimes.com in Firefox, you'll need to log in
+at nytimes.com in elinks  to ensure that you can access the same content in
+both browsers.
+
 
 ## Bug reports and feature requests
 
