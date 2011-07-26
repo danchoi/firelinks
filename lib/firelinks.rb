@@ -1,3 +1,11 @@
+
+
+puts "Starting firelinks"
+puts "Press CTRL-C to stop"
+sleep 1
+
+
+
 if `which elinks` !~ /\w/
   abort "Missing elinks! Please install it."
 end
