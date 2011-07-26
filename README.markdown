@@ -2,7 +2,8 @@
 
 Firelinks lets you mirror your Firefox browsing session in elinks.
 
-[screenshots]
+
+<a href="https://github.com/danchoi/firelinks/raw/master/screens/firelinks1b.png" rel="lightbox[screens]"><img src="https://github.com/danchoi/firelinks/raw/master/screens/firelinks1c.png" /></a>
 
 Benefits:
 
@@ -50,7 +51,7 @@ To quit Firelinks, just press `CTRL-C` (instead of the normal quit key sequence 
 
 ## Bug reports and feature requests
 
-Please submit these at either of these places:
+Please submit here:
 
 * <https://github.com/danchoi/firelinks/issues>
 
