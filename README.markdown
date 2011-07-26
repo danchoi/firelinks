@@ -13,9 +13,10 @@ Benefits:
 
 ## Prerequisites
 
-* Linux (does not work yet on OS X)
+* Supported platforms: Linux and OS X
 * [elinks][elinks]
 * Firefox 3 or higher 
+* sqlite3 version 3.7.4 or higher
 * Ruby (tested on 1.9.2)
 
 [elinks]:http://elinks.or.cz/
