@@ -10,7 +10,7 @@ end
 `killall elinks`
 
 paths = ["#{ENV['HOME']}/.mozilla/firefox", "#{ENV['HOME']}/Library/Application Support"]
-history_path = `find #{paths.map {|p| "'#{p}'"}.join(' ')} -name places.sqlite`.chomp
+history_path = `find #{paths.map {|p| "'#{p}'"}.join(' ')} -mmin -20 -name places.sqlite`.split("\n")[0].chomp
   
 puts "Using Firefox database: #{history_path.inspect}"
 
